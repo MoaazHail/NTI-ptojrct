@@ -1,0 +1,12 @@
+.filter{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.filter button.active{
+    color: var(--main-c);
+    background: var(--action-c);
+}

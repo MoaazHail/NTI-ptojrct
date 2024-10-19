@@ -1,0 +1,68 @@
+/* footer{
+    background: var(--header-c);
+    color: var(--main-c);
+    text-align: center;
+}
+footer a{
+    display: inline;
+    color: var(--main-c);
+    text-decoration: none;
+    margin: 1.25rem;
+}
+footer .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer .media i{
+    font-size: 2rem;
+}
+footer .Copyright{
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+} */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    flex: 1; 
+}
+
+/* Style for footer */
+footer {
+    background: var(--header-c);
+    color: var(--main-c);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative; /* Default position */
+    width: 100%; /* Ensure the footer spans the full width */
+}
+footer a{
+    display: inline;
+    color: var(--main-c);
+    text-decoration: none;
+    margin: 1.25rem;
+}
+footer .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer .media i {
+    font-size: 2rem;
+}
+
+footer .Copyright {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+

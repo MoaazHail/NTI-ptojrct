@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="container-work">
+    <div *ngFor="let project of projects" class="card">
+      <img [src]="project.projectImage || 'Images/project1.jpg'" alt="">
+      <div class="text">
+        <h3 class="title">{{ project.projectTitle }}</h3>
+        <span class="info">
+          {{ project.projectInfo || 'No description available.' }}
+        </span>
+        <a [href]="project.projectLink">View Project</a>
+      </div>
+
+    </div>
+  </div>

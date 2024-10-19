@@ -1,0 +1,16 @@
+.container{
+    border: 3px var(--header-c) solid;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+h2{
+    font-weight: bold;
+}
+.container .phone ,
+.container .location{
+    border-bottom: 3px var(--header-c) solid;
+    padding: 2rem;
+}
+.education{
+    padding: 2rem;
+}

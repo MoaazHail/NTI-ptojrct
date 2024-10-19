@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col m-3">
+            <div class="bg"></div>
+            <img src="edit-2.jpg">
+        </div>
+
+        <div class="col m-3">
+
+            <form [formGroup]="infoForm" (ngSubmit)='saveInfo()'>
+            <div class="college mb-3">
+                <h3>Update my information</h3>
+    
+                <label class="form-label">my name</label>
+                <input type="text" class="form-control" formControlName="name">
+                
+                <label class="form-label">job title</label>
+                <input type="text" class="form-control" formControlName="jobTitle">
+
+                <label class="form-label">My image</label>
+                <input type="file" class="form-control"formControlName="myImage">
+
+                <label class="form-label">phone number</label>
+                <input type="text" class="form-control" formControlName="phoneNumber">
+
+                <label class="form-label">my location</label>
+                <input type="text" class="form-control" formControlName="location">
+    
+                <label class="form-label">my education</label>
+                <input type="text" class="form-control" formControlName="education">
+
+            </div>
+            <button class="btn btn-success">save data</button>
+    
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        
+        <div class="col">
+            <form [formGroup]="workForm" (ngSubmit)="saveInfoProject()">
+                <div class="college mb-3">
+                    <h3>Update my work</h3>
+    
+                    <label class="form-label">project title</label>
+                    <input type="text" class="form-control" formControlName="projectTitle">
+    
+                    <label class="form-label">project image</label>
+                    <input type="file" class="form-control" formControlName="projectImage">
+    
+                    <label class="form-label">project info</label>
+                    <input type="text" class="form-control" formControlName="projectInfo">
+    
+                    <label class="form-label">project link</label>
+                    <input type="text" class="form-control"formControlName="projectLink">
+                
+                </div>
+                <button class="btn btn-success">save data</button>
+        
+            </form>
+        </div>
+
+        <div class="col">
+            <img src="edit-1.jpg" class="rounded mx-auto d-block">
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col">
+            <img src="edit-1.jpg" class="rounded mx-auto d-block">
+        </div>
+        
+        <div class="col">
+            <form [formGroup]="CVForm" (ngSubmit)="saveCV()">
+                <div class="college mb-3">
+                    <h3>Update my cv</h3>
+    
+                    <label class="form-label">my CV</label>
+                    <input type="file" class="form-control"formControlName="CVUrl">
+                
+                </div>
+
+                <button class="btn btn-success">save data</button>
+        
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+</div>

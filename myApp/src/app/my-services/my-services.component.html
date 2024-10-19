@@ -1,0 +1,16 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="container-service">
+
+    <div *ngFor="let service of services" class="card">
+      <img [src]="service.serviceImage || 'Images/project1.jpg'" alt="">
+      <div class="text">
+        <h3 class="title">{{ service.serviceTitle }}</h3>
+        <span class="info">
+          {{ service.serviceInfo || 'No description available.' }}
+        </span>
+      </div>
+    </div>
+    
+  </div>
